@@ -5,6 +5,7 @@
 # BF
 # list all the permutations and sort to find the next greater one.
 # but, time O(n!) and space are not efficient 
+# back tracing
 class Solution:
 
 	# swap function 
