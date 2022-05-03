@@ -15,4 +15,5 @@ def fillempty(r,c,rows,cols,boxes,board):
 						continue
 				board[r][c] = num
 				
-				
+def valid(board, num, r, c):
+	# check
