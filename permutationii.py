@@ -8,11 +8,14 @@ class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         res = []
         perm = []
+		# get all the unique nums in the list
         count = {n:0 for n in nums}
+		# count numbers
         for n in nums:
             count[n] += 1
         
         def dfs():
+			# base case
             if len(perm) == len(nums):
                 res.append(perm.copy())
                 return
@@ -23,7 +26,7 @@ class Solution:
                     count[n] -= 1
                     
                     dfs()
-                    
+                    # each dsf() has the two codes below that made sure to back tack to the node above
                     count[n] += 1
                     perm.pop()
         dfs()
