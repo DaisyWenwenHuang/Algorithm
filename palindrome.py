@@ -17,6 +17,7 @@ class Solution:
         return res
         
     def valid(self, s, l, r):
+		# function to test palindrome or not
         while l < r:
             if s[l] != s[r]:
                 return False
