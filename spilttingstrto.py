@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/
+# backtracking
 class Solution:
     def splitString(self, s: str) -> bool:
         
