@@ -7,8 +7,12 @@ class Solution:
         def notvalid(charset,s):
             c = Counter(charset) + Counter(s)
             return max(c.values()) > 1
-
-        
+			# prev = set()
+			# for c in s:
+			# 	if c in charset or c in prev:
+			# 		return True
+			# 	prev.add(c)
+			# return False 
 
         def backtrack(i):
             # base case
