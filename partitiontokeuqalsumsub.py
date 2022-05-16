@@ -31,6 +31,9 @@ class Solution:
         return backtrack(0,k,0)
 
 #  other solutions
+class Solution:
+    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:	
+		total,n = sum(nums), len(nums)
 		
 
 
