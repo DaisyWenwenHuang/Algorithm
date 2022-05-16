@@ -31,9 +31,30 @@ class Solution:
         return backtrack(0,k,0)
 
 #  other solutions
+		# still time limite exceeded
 class Solution:
-    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:	
-		total,n = sum(nums), len(nums)
-		
+    def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+        total,n = sum(nums),len(nums)
+        if total % k != 0:
+            return False
+        partsum = total // k
+        
+        visited = [False]* n 
+        nums.sort(reverse = True)
+        def dfs(kleft, i , cursum):
+            if kleft == 0:
+                return True
+            if cursum == partsum:
+                return dfs(kleft-1,0,0)
+            
+            for j in range(i,n):
+                if not visited[j] and cursum + nums[j]<=partsum:
+                    visited[j]= True
+                    if dfs(kleft,j+1,cursum+nums[j]):
+                        return True
+                    visited[j]=False
+            return False
+        
+        return dfs(k,0,0)
 
 
