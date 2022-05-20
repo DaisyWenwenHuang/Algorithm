@@ -1,11 +1,11 @@
 # https://leetcode.com/problems/matchsticks-to-square/
 # backtracking 
 # similar to leetcode698
-# example one
+# example one not working
 # [5,5,5,5,4,4,4,4,3,3,3,3]
-# example two
+# example two working
 # [1,1,2,2,2]
-#
+# why?
 class Solution:
     def makesquare(self, matchsticks: List[int]) -> bool:
         k = 4
