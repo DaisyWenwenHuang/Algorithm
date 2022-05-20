@@ -35,4 +35,5 @@ class Solution:
             return False
         
         return dfs(4,0,0)
-                                
+
+# another solution . accepted
