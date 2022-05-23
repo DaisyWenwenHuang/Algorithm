@@ -6,6 +6,7 @@
         def backtrack(i, subset):
             if i == len(nums):
                 res.append(subset[::])
+				# res.append(subset.copy())
                 return 
             
             # all subsets that include nums[i]
