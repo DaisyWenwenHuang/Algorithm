@@ -15,3 +15,5 @@ class Solution:
                 cur.next = cur.next.next
             cur = cur.next
         return head
+
+# two loops but the time complexity is not n^2 
