@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 # easy
-# 
+# leetcode 83
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -16,4 +16,4 @@ class Solution:
             cur = cur.next
         return head
 
-# two loops but the time complexity is not n^2 
+# two loops but the time complexity is not n^2 / while loop not for loop 
