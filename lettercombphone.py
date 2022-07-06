@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+# depth search first
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         phone = {'2':'abc','3':'def','4':'ghi','5':'jkl','6':'mno',
