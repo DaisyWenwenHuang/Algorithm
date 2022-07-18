@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/combinations/
 # backtracking
+# dfs
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         res = []
