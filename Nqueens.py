@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/n-queens/
+# GAME
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         # initialize the board with all empty space
