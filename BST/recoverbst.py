@@ -11,7 +11,7 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        # traverse the tree and get a list (suppose to be sorted if it is a valid bst)
+        # inorder traverse the tree and get a list (suppose to be sorted if it is a valid bst)
         # find the two numbers that are not in order in the list
         # traverse the tree again and swape the two displaced number
         # this will using spcae O(n)
