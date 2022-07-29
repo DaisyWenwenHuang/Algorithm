@@ -11,6 +11,7 @@ class Solution:
         
         
         def isValid(node, left, right):
+			# helper function to do recursive call 
             if not node:
                 return True
             if not (node.val<right and node.val > left):
