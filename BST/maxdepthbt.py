@@ -17,8 +17,13 @@ class Solution:
             return 1 + max(dfs(root.left),dfs(root.right))
         return dfs(root)
 
+
+
 # solution 2 bfs
+
+
 class Solution:
+	
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
@@ -33,3 +38,17 @@ class Solution:
                     q.append(node.right)
             level += 1
         return level
+
+		
+# solution 3 iteration 
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        stack = [[root,1]]
+        res = 0
+        while stack:
+            node,depth = stack.pop()
+            if node:
+                stack.append([node.left,depth+1])
+                stack.append([node.right,depth+1])
+                res = max(res,depth)
+        return res
