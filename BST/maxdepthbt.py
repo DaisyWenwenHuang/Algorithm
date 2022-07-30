@@ -52,3 +52,4 @@ class Solution:
                 stack.append([node.right,depth+1])
                 res = max(res,depth)
         return res
+# all solutions are having similar time complexity 
