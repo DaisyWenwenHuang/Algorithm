@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/max-area-of-island/
 # leetcode 695 medium
+# similar to number of islands
+# 
 
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
