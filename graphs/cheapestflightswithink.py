@@ -11,8 +11,9 @@ class Solution:
             
             for s,d,p in flights:
                 if prices[s] == float('inf'):
+					# check if the sources is reachable
                     continue
-                if prices[s] + p < tempprices[d]:
+                if prices[s] + p < tempprices[d]: # we could already updated tempprices in the previous loop
                     tempprices[d] = prices[s] + p
             prices = tempprices
         return -1 if prices[dst] == float('inf') else prices[dst]
