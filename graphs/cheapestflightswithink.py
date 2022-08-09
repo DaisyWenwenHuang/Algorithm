@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/cheapest-flights-within-k-stops/
 # leetcode 787 medium
 # Bellman-ford algorithm
+# weights can be negative
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         prices = [float('inf')] *n
