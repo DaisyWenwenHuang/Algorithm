@@ -4,6 +4,7 @@
 # review
 # do multiple bfs at the same time as there could be multiple rotten organes that affects fresh oragnes at the same time 
 # dfs is not practical 
+# done
         rows = len(grid)
         cols = len(grid[0])
         Q = deque()
