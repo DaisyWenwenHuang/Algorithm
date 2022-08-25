@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/course-schedule/submissions/
 # leetcode 207 medium
+# dfs
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         premap= {i:[] for i in range(numCourses)}
