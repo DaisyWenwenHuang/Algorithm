@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/subsets/
 # dfs
+# done
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
