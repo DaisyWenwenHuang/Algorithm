@@ -25,6 +25,7 @@ class Solution:
 
 
 # solution 2, better memory of O(n)
+# bottom down to up
 class Solution:
     def change(self, amount: int, coins: List[int]) -> int:
         dp = [[0]*(len(coins)+1) for i in range(amount+1)]
