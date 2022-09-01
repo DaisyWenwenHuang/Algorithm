@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/longest-increasing-subsequence/
 # leetcode 300
+# dynamic program
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         lis = [1]*len(nums)
