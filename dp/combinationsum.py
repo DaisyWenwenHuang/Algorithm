@@ -13,7 +13,9 @@ class Solution:
                 return 
             if i >=len(candidates) or total > target:
                 return
-            
+
+			# two desitions , one to include [i] and one is not
+			# the time complexity is O(2^h) where h is the height of the decision tree 
             cur.append(candidates[i])
             dfs(i,cur,total+candidates[i])
             cur.pop()
