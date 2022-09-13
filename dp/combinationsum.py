@@ -18,6 +18,7 @@ class Solution:
 			# the time complexity is O(2^h) where h is the height of the decision tree 
             cur.append(candidates[i])
             dfs(i,cur,total+candidates[i])
+			# this code below is to clean up the cur before do the second decision (not including [i])
             cur.pop()
             dfs(i+1,cur, total)
             
