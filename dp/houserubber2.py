@@ -2,6 +2,10 @@
 # leetcode 213
 # medium
 # basically just reusing house robber 1 in a clever way
+# since we can not rob the first and the last house at the same time
+# we can just split to two sub problems. one is not including the last house
+# the other is not including the first house
+# one edge case is there only one house, which is the frist and the last at the same time
 class Solution:
     def rob(self, nums: List[int]) -> int:
         
