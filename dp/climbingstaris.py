@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/climbing-stairs/
 # leetcode 70
 # easy
-
+# dp solution, bottom-up
 class Solution:
     def climbStairs(self, n: int) -> int:
+		# only need two memeroy to store the last two value calculated
+		# f(3) = f(1)+f(2)
         f1 = 1
         f2 = 1
         f = 0
