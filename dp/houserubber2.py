@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/house-robber-ii/
 # leetcode 213
 # medium
+# see house robber one first
 # basically just reusing house robber 1 in a clever way
 # since we can not rob the first and the last house at the same time
 # we can just split to two sub problems. one is not including the last house
