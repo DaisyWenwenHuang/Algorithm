@@ -14,3 +14,4 @@ class Solution:
             cursum += n
             maxsum = max(maxsum,cursum)
         return maxsum
+# basic but import problem
