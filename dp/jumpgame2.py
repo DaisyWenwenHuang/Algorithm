@@ -17,5 +17,6 @@ class Solution:
 			# shift the pointers to the new window
             l = r + 1
             r = farthest
+			# count jumps
             res += 1
         return res
