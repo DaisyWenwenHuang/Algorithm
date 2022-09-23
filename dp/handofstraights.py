@@ -33,4 +33,4 @@ class Solution:
                         return False
                     heapq.heappop(minH)
         return True
-        
+# time complexicy is O(nlogn)
