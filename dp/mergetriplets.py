@@ -2,3 +2,4 @@
 # leetcode 1899
 #  medium
 # greedy
+# using zip to avoid two loops 
