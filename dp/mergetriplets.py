@@ -2,7 +2,7 @@
 # leetcode 1899
 #  medium
 # greedy
-# using zip to avoid two loops 
+# 
 class Solution:
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         t = [0,0,0]
