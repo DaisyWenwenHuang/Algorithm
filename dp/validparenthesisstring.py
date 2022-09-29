@@ -5,6 +5,7 @@
 class Solution:
     def checkValidString(self, s: str) -> bool:
         leftmax,leftmin = 0,0
+		# it is a range to track "(", 
         for ele in s:
             if ele == '(':
                 leftmax += 1
@@ -19,4 +20,5 @@ class Solution:
                 return False
             if leftmin < 0:
                 leftmin = 0
+		# after the loop, if leftmin==0, return True
         return leftmin == 0
