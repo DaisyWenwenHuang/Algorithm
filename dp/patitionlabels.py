@@ -5,6 +5,7 @@
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
         counts = {}
+		# dictionary to store each elemnt's last appear index
         for index,ele in enumerate(s):
             counts[ele] = index
         res = []
