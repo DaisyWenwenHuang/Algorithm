@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
 # leetcode 5
 # medium
+# 1-d dp
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         res = ''
