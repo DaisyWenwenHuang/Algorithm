@@ -4,7 +4,8 @@
 # 1-D dp
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        res = len(s)
+        # each element can be its own palindrom 
+		res = len(s)
         for i in range(len(s)):
             # odd 
 			# odd length of the palindrom
