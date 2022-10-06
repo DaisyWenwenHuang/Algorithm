@@ -16,7 +16,7 @@ class Solution:
             dp[i] = res
             return res
         return dfs(0)
-# dp
+# dp 1-d
 class Solution:
     def numDecodings(self, s: str) -> int:
 		df = {len(s):1}
