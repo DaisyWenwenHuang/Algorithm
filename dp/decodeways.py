@@ -17,6 +17,7 @@ class Solution:
             return res
         return dfs(0)
 # dp 1-d
+# memorization
 class Solution:
     def numDecodings(self, s: str) -> int:
 		df = {len(s):1}
