@@ -11,6 +11,9 @@ class Solution:
             for c in coins:
                 if a-c >= 0:
                     dp[a] = min(dp[a],1+dp[a-c])
+					# coin = 4
+					# a = 7
+					# dp[7] = 1+dp[3]
         if dp[amount] != float(inf):
             return dp[amount]
         else:
