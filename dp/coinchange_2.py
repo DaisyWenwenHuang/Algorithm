@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/coin-change/
 # leetcode 322
 # 1-d dp
+# memorization 
 # medium
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
